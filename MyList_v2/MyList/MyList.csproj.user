@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LargeTileSource>F:\代码\现操\MyList\MyList\Assets\logo.png</LargeTileSource>
+    <WideTileSource>F:\代码\现操\MyList\MyList\Assets\logo.png</WideTileSource>
+    <AppIconSource>F:\代码\现操\MyList\MyList\Assets\LockScreenLogo.scale-200.png</AppIconSource>
+    <Source>
+    </Source>
+    <SmallTileSource>F:\代码\现操\MyList\MyList\Assets\LockScreenLogo.scale-200.png</SmallTileSource>
+    <MediumTileSource>F:\代码\现操\MyList\MyList\Assets\logo.png</MediumTileSource>
+    <SplashScreenSource>F:\代码\现操\MyList\MyList\Assets\LockScreenLogo.scale-200.png</SplashScreenSource>
+    <PackageLogoSource>F:\代码\现操\MyList\MyList\Assets\logo.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="InternetAccess.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InternetAccess"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="LightBlue">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="20">
+            <TextBlock Text="天气查询" FontSize="22" FontWeight="Bold"/>
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="城市名" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="1" x:Name="City" Text="广州" Width="auto" Height="auto" VerticalAlignment="Center"/>
+                <Button Grid.Column="2" x:Name="weatherButton" Content="查询" HorizontalAlignment="Right" VerticalAlignment="Center" Opacity="0.8" Click="weatherButton_Click"/>
+            </Grid>
+            <TextBox x:Name="weatherResult" Header="查询结果" Text="" Margin="0,20,0,0" Width="auto" Height="200" TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="20">
+            <TextBlock Text="身份证归属地查询" FontSize="22" FontWeight="Bold"/>
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="身份证" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="1" x:Name="Id" Text="" Width="auto" Height="auto" VerticalAlignment="Center"/>
+                <Button Grid.Column="2" x:Name="idButton" Content="查询" HorizontalAlignment="Right" VerticalAlignment="Center" Opacity="0.8" Click="idButton_Click"/>
+            </Grid>
+            <TextBox x:Name="idResult" Header="查询结果" Text="" Margin="0,20,0,0" Width="auto" Height="200" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Page>
